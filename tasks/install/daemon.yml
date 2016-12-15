@@ -1,0 +1,3 @@
+---
+- name: set global google dns servers
+  command: "docker daemon --dns=8.8.8.8"

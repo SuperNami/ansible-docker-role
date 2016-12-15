@@ -1,0 +1,5 @@
+---
+- name: add apt repository
+  apt_repository: repo='deb https://apt.dockerproject.org/repo {{ debian_version_name }} main'
+                  update_cache=true
+                  state=present

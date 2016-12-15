@@ -1,0 +1,8 @@
+---
+- name: install docker
+  apt: name={{ item }}
+       update_cache=yes
+       state=present
+
+  with_items:
+  - "docker-engine=1.10.3-0~trusty"

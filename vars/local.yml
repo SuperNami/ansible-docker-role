@@ -1,0 +1,15 @@
+---
+# Ssh user
+os_ssh_user: ubuntu
+#os_ssh_user: user
+#os_ssh_user: root
+#os_ssh_user: vagrant
+
+# Ubuntu 16.04
+ubuntu_version_name: ubuntu-xenial
+
+# Ubuntu 15.10
+#ubuntu_version_name: ubuntu-wily
+
+# Debian 8.5
+debian_version_name: debian-jessie

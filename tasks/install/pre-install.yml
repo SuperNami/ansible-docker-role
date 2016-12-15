@@ -1,0 +1,29 @@
+---
+- name: install python pip
+  apt: pkg=python-pip
+       update_cache=yes
+       state=present
+
+
+- name: make sure pip upgraded
+  command: easy_install -U pip
+
+
+- name: install docker py
+  pip: name=docker-py
+       state=latest
+
+
+- name: apt preparation
+  apt: pkg={{ item }}
+       update_cache=yes
+       state=present
+
+  with_items:
+  - apt-transport-https
+  - ca-certificates
+
+
+- name: install docker apt key
+  apt_key: keyserver=hkp://p80.pool.sks-keyservers.net:80
+           id=58118E89F3A912897C070ADBF76221572C52609D

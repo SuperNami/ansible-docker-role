@@ -1,0 +1,11 @@
+---
+- name: docker
+  hosts: all
+  user: root
+  become: true
+  roles:
+  - docker
+  vars_files:
+  - ../../global/global.yml
+  - vars/global.yml
+  - vars/docker.yml

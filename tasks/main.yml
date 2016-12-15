@@ -1,0 +1,31 @@
+---
+- include: install/pre-install.yml
+  tags: docker_pre_install
+
+
+- include: install/debian.yml
+  tags: docker_debian_repository
+
+
+- include: install/ubuntu.yml
+  tags: docker_ubuntu_repository
+
+
+- include: install/install-latest.yml
+  tags: docker_install_latest
+
+
+- include: install/install-old.yml
+  tags: docker_install_old
+
+
+- include: install/post-install.yml
+  tags: docker_post_install
+
+
+- include: install/daemon.yml
+  tags: docker_daemon
+
+
+- include: install/compose.yml
+  tags: docker_compose_install

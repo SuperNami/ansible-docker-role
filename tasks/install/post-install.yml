@@ -1,0 +1,8 @@
+---
+- name: enable docker on boot systemd
+  command: systemctl enable docker
+
+
+- name: add user to docker group
+  command: usermod -aG docker {{ os_ssh_user }}
+  notify: restart docker
