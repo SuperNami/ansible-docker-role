@@ -1,9 +1,0 @@
----
-# Ubuntu
-ubuntu_version_name: "ubuntu-{{ global_ubuntu_version_name }}"
-
-# Debian
-debian_version_name: "debian-{{ global_debian_version_name }}"
-
-# Debian ssh user
-os_ssh_user: "{{ global_user }}"
