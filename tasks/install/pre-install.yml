@@ -9,8 +9,8 @@
   command: easy_install -U pip
 
 
-- name: install docker py
-  pip: name=docker-py
+- name: install docker pip
+  pip: name=docker
        state=latest
 
 

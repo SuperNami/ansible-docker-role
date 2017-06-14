@@ -3,4 +3,4 @@
 dockerfiles_path: /var/docker/dockerfiles/
 
 # Compose
-docker_compose_version: 1.8.0
+docker_compose_version: 1.13.0
